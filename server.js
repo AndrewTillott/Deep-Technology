@@ -38,17 +38,17 @@ app.post('/email', (req, res) => {
 
 // Render home page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Error page
 app.get('/error', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'error.html'));
+    res.sendFile(path.join(__dirname, 'public', 'error.html'));
 });
 
 // Email sent page
 app.get('/email/sent', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'emailMessage.html'));
+    res.sendFile(path.join(__dirname, 'public', 'emailMessage.html'));
 });
 
 
